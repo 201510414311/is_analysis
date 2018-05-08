@@ -82,6 +82,7 @@ ziyuan_name|varchar2(100)|否|否|||资源的名称|
 * 请求地址：http://localhost:8080/bookManagetwo/selectBook.action
 * 请求方法：POST
 * 请求参数：
+
 | 参数名称 | 必填 | 说明 |
 |:-:|:-:|:-:|
 |reader_id |是|读者的借书id号，验证读者
@@ -105,6 +106,7 @@ ziyuan_name|varchar2(100)|否|否|||资源的名称|
 ```
 
 * 返回参数说明：
+
 | 参数名称 |  说明 |
 |:-:|:-:|
 |info|查询成功|
@@ -115,6 +117,7 @@ ziyuan_name|varchar2(100)|否|否|||资源的名称|
 * 请求地址：http://localhost:8080/bookManagetwo/lendBook.action
 * 请求方法：POST
 * 请求参数：
+
 | 参数名称 | 必填 | 说明 |
 |:-:|:-:|:-:|
 |ISBN|是|图书的ISBN编码
@@ -139,6 +142,7 @@ ziyuan_name|varchar2(100)|否|否|||资源的名称|
 ```
 
 * 返回参数说明：
+
 | 参数名称 |  说明 |
 |:-:|:-:|
 |info|借书成功信息|
