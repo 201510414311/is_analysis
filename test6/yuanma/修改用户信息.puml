@@ -1,0 +1,15 @@
+@startuml
+actor user
+participant "student,users" as a
+participant "teacher,users" as b
+user->a:输入信息
+activate a
+a->a:修改
+deactivate a
+alt user:b
+user->b:输入信息
+activate b
+b->b:修改
+deactivate b
+end
+@enduml

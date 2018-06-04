@@ -1,0 +1,12 @@
+@startuml
+actor teacher
+participant "term" as a
+participant "sub" as b
+participant "test" as c
+teacher->a:选择学期
+a->b:选择课程
+b->c:发布实验
+activate c
+c->teacher:返回信息
+deactivate c
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+actor user
+participant "term" as a
+participant "sub" as b
+user->a:选择学期
+a->b:查找课程
+@enduml

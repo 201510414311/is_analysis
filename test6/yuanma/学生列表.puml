@@ -1,0 +1,8 @@
+@startuml
+actor user
+participant "student" as a
+participant "user" as b
+user->a:查看所有学生列表
+a->b:查找user信息
+b->user:返回信息
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+actor user
+participant "students" as a
+participant "term" as b
+participant "sub" as c
+participant "test" as d
+participant "test_point" as e
+participant "grade" as f
+user->a:查找所有学生列表
+alt user是student
+    a->b:当前学生信息
+else user是teacher
+   a->b:所有学生信息
+end
+b->c:当前学期课程
+c->d:当前课程实验
+d->e:每个实验分部得分
+e->f:信息传入grade
+f->user:返回所有信息
+@enduml

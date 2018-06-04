@@ -1,0 +1,7 @@
+@startuml
+actor user
+participant "sub" as a
+participant "test" as b
+user->a:选择课程
+a->b:查找实验
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+actor teacher
+participant "term" as a
+participant "sub" as b
+participant "test" as c
+participant "students" as d
+participant "test_point" as e
+participant "grade" as f
+teacher->a:选择学期
+a->b:选择课程
+b->c:选择实验
+c->d:选择评改学生
+d->e:打分细项
+e->f:存入成绩
+@enduml

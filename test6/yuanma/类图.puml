@@ -1,0 +1,75 @@
+@startuml
+title 基于GitHub的实验管理平台--类图
+class users {
+    <b>user_id</b> （用户ID）
+    name （用户真实姓名）
+    github_username （用户GitHub账号）
+    update_date （用户GitHub账号修改日期）
+    password （用户密码）
+    disable （用户是否禁用）
+}
+class teachers{
+    <b>teacher_id</b> （老师工号）
+    department （老师所属部门）
+    tea_termId （授课学期号）
+tea_subId（授课课程号）
+tea_testId（发布实验的id）
+}
+class students{
+    <b>student_id</b> （学号）
+class_Id（班级号）
+    class （班级）
+    result_sub_sum（单科成绩汇总）
+    web_sum （网站正确与否汇总）
+stu_termId（学习学期号）
+stu_subId（学习课程号）
+}
+users <|- students
+users <|-- teachers
+class class{
+<b>class_Id</b>（班级号）
+class_name（班级名称）
+}
+class term{
+<b>term_id</b>（学期号）
+term_name（学期名称）
+}
+class sub{
+<b>sub_id</b>（课程号）
+sub_name（课程名）
+sub_testId（课程实验号）
+sub_termId（课程学期号）
+}
+class grades{
+<b>sub_id</b>（课程号）
+<b>term_id</b>（学期号）
+<b>stu_id</b>（学号）
+<b>test_id</b>（实验号）
+each_score（每个评分项的得分）
+each_memo（每个评分项的评语）
+result_grade（总分数）
+update_date（评改日期）
+}
+class test{
+<b>test_id</b>（实验号）
+<b>sub_id</b>（课程号）
+<b>term_id</b>（学期号）
+test_name（实验名称）
+}
+class test_point{
+<b>point_id（实验评分项编号）</b>
+test_id（实验号）
+point_score（分数）
+point_memo（评语）
+}
+
+test"1"--"n"test_point
+test"n"--"n"grades
+grades"n"--"1"students
+class "1"--"n"students
+term"n"--"n"teachers
+term"n"--"n"students
+sub"n"--"n"term
+sub"n"--"n"teachers
+sub"n"--"n"students
+@enduml

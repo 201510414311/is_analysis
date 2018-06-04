@@ -1,0 +1,23 @@
+@startuml
+actor user
+participant "login"
+participant "DB"
+activate user
+activate login
+user->login:登陆操作
+deactivate user
+login->DB:验证信息
+deactivate login
+activate DB
+DB->login:合法的（）
+activate login
+login->user:初始化（）
+activate user
+deactivate login
+
+deactivate user
+DB->login:不合法的（）
+deactivate DB
+activate login
+login->user:登录失败
+@enduml
