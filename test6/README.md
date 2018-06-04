@@ -13,6 +13,7 @@
 
 ## 2. 系统总体结构
 ![](./System.png)
+
 界面设计参见：https://201510414311.github.io/is_analysis/test6/index.html
 
 ## 3. 用例图设计 [源码][1]
@@ -39,7 +40,7 @@
 
   [1]: https://github.com/201510414311/is_analysis/blob/master/test6/yuanma/用例图.puml
   [2]: https://github.com/201510414311/is_analysis/blob/master/test6/yuanma/类图.puml
-  [3]: https://github.com/201510414311/is_analysis/blob/master/test6/数据库设计.png
+  [3]: https://github.com/201510414311/is_analysis/blob/master/test6/数据库设计.md
   [4]: https://github.com/201510414311/is_analysis/blob/master/test6/%E6%9F%A5%E7%9C%8B%E6%88%90%E7%BB%A9%E7%94%A8%E4%BE%8B.md
   [5]: https://github.com/201510414311/is_analysis/blob/master/test6/%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E7%94%A8%E4%BE%8B.md
   [6]: https://github.com/201510414311/is_analysis/blob/master/test6/%E7%99%BB%E5%87%BA%E7%94%A8%E4%BE%8B.md
