@@ -1,4 +1,4 @@
-﻿# 接口：getStudentList [返回](./REDEME.md)
+﻿# 接口：getStudentList [返回](./README.md)
 - 功能：返回所有学生的列表。
 - 权限：
 - API请求地址：http://202.115.82.8:1522/v1/api/getStudentList
