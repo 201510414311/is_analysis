@@ -2,6 +2,6 @@
 actor user
 participant "sub" as a
 participant "test" as b
-user->a:选择课程
-a->b:查找实验
+user->a:閫夋嫨璇剧▼
+a->b:鏌ユ壘瀹為獙
 @enduml
