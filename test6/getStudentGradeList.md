@@ -1,4 +1,4 @@
-﻿# 接口：getStudentGradeList [返回](./REDEME.md)
+﻿# 接口：getStudentGradeList [返回](./README.md)
 - 功能：查看学生实验成绩
 - 权限：老师查看
 - API请求地址：http://202.115.82.8:1522/v1/api/getStudentGradeList
