@@ -1,4 +1,4 @@
-﻿# 接口：setTest [返回](./REME.md)
+﻿# 接口：setTest [返回](./README.md)
 - 功能：增加实验
 - 权限：老师用
 - API请求地址：http://202.115.82.8:1522/v1/api/setTest
