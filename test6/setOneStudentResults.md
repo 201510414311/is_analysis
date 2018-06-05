@@ -1,10 +1,11 @@
-﻿# 接口：setOneStudentResults [返回](./REDEME.md)
+﻿# 接口：setOneStudentResults [返回](./README.md)
 - 功能：设置一个学生的部分实验成绩和评语。输入参数result_point不为空，自动设置update_date为当前日期，表示同时设置批改日期。
 输入参数result_point为空，自动设置update_date为空，表示未批改。
 - 权限：师：可以查看所有学生的成绩。
 - API请求地址：http://202.115.82.8:1522/v1/api/setOneStudentResults
 - 请求方式 ： POST
 - 请求实例：
+
 |参数名称|说明|
 |:-:|:-:|
 |stu_id|学生学号|
@@ -42,6 +43,7 @@
   }
 ```
 - 返回参数说明：
+
 |参数名称|说明|
 |:-:|:-:|
 |status|bool类型，true表示正确的返回，false表示有错误|
